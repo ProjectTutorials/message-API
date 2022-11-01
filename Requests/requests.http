@@ -1,0 +1,26 @@
+### GET ALL
+GET http://localhost:3000/Messages
+
+
+### CREATE
+POST http://localhost:3000/Messages/
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "message": "this is john doe"
+}
+
+
+### UPDATE
+PUT http://localhost:3000/Messages/63613241ebf4974db4ffcb30
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "message": "this is jane doe"
+}
+
+
+### DELETE
+DELETE http://localhost:3000/Messages/63613241ebf4974db4ffcb30
